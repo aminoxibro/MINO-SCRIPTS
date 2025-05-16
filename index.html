@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MINO Scripts</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+                  url('zoro-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ccffcc;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 255, 0, 0.1);
+      border-bottom: 2px solid #00ff88;
+    }
+
+    header h1 {
+      font-size: 32px;
+      color: #00ff88;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #aaffaa;
+    }
+
+    .script {
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 15px auto;
+      max-width: 90%;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #00ff88;
+    }
+
+    .script h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #00ff88;
+    }
+
+    .copy-button {
+      background-color: #00ff88;
+      color: black;
+      border: none;
+      padding: 10px 15px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .copy-button:hover {
+      background-color: #00cc66;
+    }
+
+    @media (max-width: 600px) {
+      .script {
+        padding: 15px;
+      }
+
+      .script h2 {
+        font-size: 20px;
+      }
+
+      .copy-button {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MINO Scripts 🌀</h1>
+    <p>أفضل سكربتات Blox Fruits الجاهزة للنسخ</p>
+  </header>
+
+  <div class="script">
+    <h2>Alchemy Hub Script</h2>
+    <button class="copy-button" onclick="copyScript(`loadstring(game:HttpGet('https://scripts.alchemyhub.xyz'))()`)">📋 نسخ السكربت</button>
+  </div>
+
+  <div class="script">
+    <h2>Banana Cat Hub</h2>
+    <button class="copy-button" onclick="copyScript(`loadstring(game:HttpGet('https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua'))()`)">📋 نسخ السكربت</button>
+  </div>
+
+  <div class="script">
+    <h2>Speed Hub X</h2>
+    <button class="copy-button" onclick="copyScript(`loadstring(game:HttpGet('https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua'))()`)">📋 نسخ السكربت</button>
+  </div>
+
+  <div class="script">
+    <h2>Raito Hub</h2>
+    <button class="copy-button" onclick="copyScript(`loadstring(game:HttpGet('https://raw.githubusercontent.com/Efe0626/RaitoHub/main/Script'))()`)">📋 نسخ السكربت</button>
+  </div>
+
+  <div class="script">
+    <h2>HoHo Hub Script</h2>
+    <button class="copy-button" onclick="copyScript(`loadstring(game:HttpGet('https://raw.githubusercontent.com/ascn123/HOHO_H/main/Loading_UI'))()`)">📋 نسخ السكربت</button>
+  </div>
+
+  <script>
+    function copyScript(script) {
+      navigator.clipboard.writeText(script).then(function() {
+        alert("✅ تم نسخ السكربت بنجاح!");
+      }, function(err) {
+        alert("❌ حدث خطأ أثناء النسخ");
+      });
+    }
+  </script>
+
+</body>
+</html>
